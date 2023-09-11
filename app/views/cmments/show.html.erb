@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @cmment %>
+
+<div>
+  <%= link_to "Edit this cmment", edit_cmment_path(@cmment) %> |
+  <%= link_to "Back to cmments", cmments_path %>
+
+  <%= button_to "Destroy this cmment", @cmment, method: :delete %>
+</div>

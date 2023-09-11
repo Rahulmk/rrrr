@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cmments</h1>
+
+<div id="cmments">
+  <% @cmments.each do |cmment| %>
+    <%= render cmment %>
+    <p>
+      <%= link_to "Show this cmment", cmment %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cmment", new_cmment_path %>
